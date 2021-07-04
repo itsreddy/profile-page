@@ -7,12 +7,15 @@ import { HeaderSection } from '../layout/HeaderSection';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
-
 const Header = () => (
-
-<Background color="bg-gray-100">
+  <Background color="bg-gray-100">
     <HeaderSection yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
         <li>
           <Link href="mailto:pduggirala@ucdavis.edu">
             <a>Email</a>
@@ -35,7 +38,7 @@ const Header = () => (
         </li> */}
       </NavbarTwoColumns>
     </HeaderSection>
-    </Background>
+  </Background>
 );
 
 export { Header };
