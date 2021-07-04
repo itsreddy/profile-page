@@ -6,8 +6,8 @@ import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
+// import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+// import { Logo } from './Logo';
 
 const Hero = () => (
   <Background color="bg-gray-100">
@@ -45,10 +45,9 @@ const Hero = () => (
           </>
         )}
         description="I'm a second year graduate student majoring in Computer Science at University of California, Davis, where I work on AI in general and Deep Learning in particular."
-        researchOverview="Currently researching deep stacked autoencoder based networks and progressive training techniques for unified representation learning from multiple modalities of data, specifically images and time-series data for applications like multi-modal transport and synthetic data generation in the health domain under the guidance of."
         button={(
           <Link href="https://itsreddy.github.io/data/resume-prashanth-may21.pdf">
-            <a>
+            <a target="_blank">
               <Button xl>View Resume</Button>
             </a>
           </Link>
