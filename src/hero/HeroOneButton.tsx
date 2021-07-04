@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
+  researchOverview?: string
   button: ReactNode;
 };
 
@@ -12,7 +13,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       {props.title}
     </h1>
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
-
+    <div className="text-1xl">{props.researchOverview}</div>
     {props.button}
   </header>
 );

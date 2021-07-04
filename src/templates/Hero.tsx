@@ -11,34 +11,45 @@ import { Logo } from './Logo';
 
 const Hero = () => (
   <Background color="bg-gray-100">
-    <Section yPadding="py-6">
+    {/* <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
+        <li>
+          <Link href="mailto:pduggirala@ucdavis.edu">
+            <a>Email</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.github.com/itsreddy">
+            <a target="_blank">GitHub</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="http://www.linkedin.com/in/prashred/">
+            <a target="_blank">LinkedIn</a>
+          </Link>
+        </li>
         <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
             <a>GitHub</a>
           </Link>
         </li>
-        <li>
-          <Link href="/">
-            <a>Sign in</a>
-          </Link>
-        </li>
       </NavbarTwoColumns>
-    </Section>
+    </Section> */}
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={(
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developer</span>
+            {'PRASHANTH REDDY\n'}
+            <span className="text-primary-500">DUGGIRALA</span>
           </>
         )}
-        description="The easiest way to build React landing page in seconds."
+        description="I'm a second year graduate student majoring in Computer Science at University of California, Davis, where I work on AI in general and Deep Learning in particular."
+        researchOverview="Currently researching deep stacked autoencoder based networks and progressive training techniques for unified representation learning from multiple modalities of data, specifically images and time-series data for applications like multi-modal transport and synthetic data generation in the health domain under the guidance of."
         button={(
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="https://itsreddy.github.io/data/resume-prashanth-may21.pdf">
             <a>
-              <Button xl>Download Your Free Theme</Button>
+              <Button xl>View Resume</Button>
             </a>
           </Link>
         )}

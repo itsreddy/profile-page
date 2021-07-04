@@ -18,16 +18,18 @@ const Logo = (props: ILogoProps) => {
         width={size}
         height={size}
         viewBox="0 0 24 24"
-        strokeWidth="1.5"
+        strokeWidth="1.0"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M0 0h24v24H0z" stroke="none" />
-        <rect x="3" y="12" width="6" height="8" rx="1" />
-        <rect x="9" y="8" width="6" height="12" rx="1" />
-        <rect x="15" y="4" width="6" height="16" rx="1" />
-        <path d="M4 20h14" />
+        {/* <path d="M0 0h24v24H0z" stroke="none" /> */}
+        <rect x="3" y="4" width="6" height="16" rx="1" />
+        <rect x="9" y="4" width="6" height="8" rx="1" />
+        {/* <rect x="18" y="4" width="6" height="16" rx="1" /> */}
+        {/* <rect x="24" y="4" width="6" height="8" rx="1" /> */}
+        {/* <rect x="24" y="12" width="6" height="8" rx="1" /> */}
+        {/* <path d="M4 20h14" /> */}
       </svg>
 
       {Config.site_name}

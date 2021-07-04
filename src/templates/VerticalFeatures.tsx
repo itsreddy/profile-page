@@ -5,8 +5,8 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="Academic Objective"
+    description="Exposure to applications of machine learning in the area of medicine and discussions with Ophthalmologists about potential applications of intelligent robots and sensor systems in the operation theatre has helped me realize how complex multimedia data is rapidly growing in the medical field. It has deeply influenced my determination to pursue research in applications of ML and computer vision in this area on the long term."
   >
     <VerticalFeatureRow
       title="Your title here"
