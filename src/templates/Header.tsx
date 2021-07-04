@@ -13,27 +13,31 @@ const Header = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a className="hover:text-gray-500">Home</a>
           </Link>
         </li>
         <li>
           <Link href="mailto:pduggirala@ucdavis.edu">
-            <a>Email</a>
+            <a className="hover:text-gray-500">Email</a>
           </Link>
         </li>
         <li>
           <Link href="https://www.github.com/itsreddy">
-            <a target="_blank">GitHub</a>
+            <a className="hover:text-gray-500" target="_blank">
+              GitHub
+            </a>
           </Link>
         </li>
         <li>
           <Link href="http://www.linkedin.com/in/prashred/">
-            <a target="_blank">LinkedIn</a>
+            <a className="hover:text-gray-500" target="_blank">
+              LinkedIn
+            </a>
           </Link>
         </li>
         {/* <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a target="_blank">Resume</a>
+            <a className='hover:text-gray-500' target="_blank">Resume</a>
           </Link>
         </li> */}
       </NavbarTwoColumns>

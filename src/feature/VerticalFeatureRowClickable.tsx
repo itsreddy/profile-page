@@ -13,9 +13,18 @@ type IVerticalFeatureRowProps = {
 };
 
 const VerticalFeatureRowClickable = (props: IVerticalFeatureRowProps) => {
-  const verticalFeatureClass = className('mt-20', 'flex', 'flex-wrap', 'items-center', {
-    'flex-row-reverse': props.reverse,
-  });
+  const verticalFeatureClass = className(
+    'rounded-lg',
+    'hover:bg-gray-100',
+    'mt-20',
+    'p-6',
+    'flex',
+    'flex-wrap',
+    'items-center',
+    {
+      'flex-row-reverse': props.reverse,
+    },
+  );
 
   // const VfrWrap = React.forwardRef(({onClick, href}, ref) => {
   //   return (

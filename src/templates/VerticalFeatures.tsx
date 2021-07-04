@@ -11,17 +11,18 @@ const VerticalFeatures = () => (
   >
     <VerticalFeatureRowClickable
       title="Research"
-      description="I have a keen interest in Computer Vision, Deep Learning and Blockchains. I have solved problems in the domains of Medical Diagnosis, Data Analytics, Sentiment Analysis, Time series prediction and also made a robot. You can find a detailed list of some of my research and projects here. Click this item to view some of my research"
+      description="I have a keen interest in Computer Vision, Deep Learning and Blockchains. I have solved problems in the domains of Medical Diagnosis, Data Analytics, Sentiment Analysis, Time series prediction and also made a robot. You can find a detailed list of some of my research and projects here. Click here to view some of my research"
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
       href="/research"
       reverse
     />
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+    <VerticalFeatureRowClickable
+      title="Work"
+      description="I have spent most of my summer breaks in the industry, working on exciting projects and trying to complement my knowledge from coursework with meaningful internships which gave me invaluable experience. Click here to view some of my research"
       image="/assets/images/feature.svg"
-      imageAlt="First feature alt text"
+      imageAlt="Third feature alt text"
+      href="/work"
     />
     <VerticalFeatureRow
       title="Your title here"
