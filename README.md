@@ -1,3 +1,6 @@
+### TODO
+Figure out some way to allow people to reach out via an automated text message to me
+
 # Personal Profile Page
 forked from below
 
