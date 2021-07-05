@@ -17,7 +17,11 @@ const FooterCopyright = () => (
     {' '}
     by
     {' '}
-    <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
+    <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+      Next.js
+    </a>
+    . Template by
+    <a href="https://creativedesignsguru.com"> CreativeDesignsGuru</a>
     {/*
      * PLEASE READ THIS SECTION
      * We'll really appreciate if you could have a link to our website
@@ -29,13 +33,13 @@ const FooterCopyright = () => (
         .footer-copyright :global(a) {
           @apply text-primary-500;
         }
-
-        .footer-copyright :global(a:hover) {
-          @apply underline;
-        }
       `}
     </style>
   </div>
 );
 
 export { FooterCopyright };
+
+// .footer-copyright :global(a:hover) {
+//   @apply underline;
+// }

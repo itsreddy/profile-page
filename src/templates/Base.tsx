@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Meta } from '../layout/Meta';
 import { Config } from '../utils/Config';
-import { Banner } from './Banner';
+// import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Hero } from './Hero';
@@ -14,7 +14,7 @@ const Base = () => (
     <Header />
     <Hero />
     <VerticalFeatures />
-    <Banner />
+    {/* <Banner /> */}
     <Footer />
   </div>
 );
