@@ -2,7 +2,7 @@ import React from 'react';
 
 import className from 'classnames';
 
-type IVerticalFeatureRowProps = {
+type IVerticalFeatureProps = {
   title: string;
   description: string;
   image: string;
@@ -12,7 +12,7 @@ type IVerticalFeatureRowProps = {
   target?: string;
 };
 
-const VerticalFeatureRowClickable = (props: IVerticalFeatureRowProps) => {
+const WorkFeatureClickable = (props: IVerticalFeatureProps) => {
   const verticalFeatureClass = className(
     'transition duration-500',
     'rounded-3xl',
@@ -26,12 +26,6 @@ const VerticalFeatureRowClickable = (props: IVerticalFeatureRowProps) => {
       'flex-row-reverse': props.reverse,
     },
   );
-
-  // const VfrWrap = React.forwardRef(({onClick, href}, ref) => {
-  //   return (
-
-  //   )
-  // })
 
   return (
     // <VfrWrap/>
@@ -54,4 +48,4 @@ const VerticalFeatureRowClickable = (props: IVerticalFeatureRowProps) => {
   );
 };
 
-export { VerticalFeatureRowClickable };
+export { WorkFeatureClickable };

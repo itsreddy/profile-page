@@ -27,7 +27,7 @@ const Hero = () => (
           </>
         )}
         button={(
-          <Link href="https://itsreddy.github.io/data/resume-prashanth-may21.pdf">
+          <Link href="https://docs.google.com/document/d/e/2PACX-1vSmg_LJylAlKRHuZrazjfo9aM4Oj0szScsT0qwdb46Hx1D_HV1NPM20w1ax3HI8B5721D3kJUzho2xQ/pub">
             <a target="_blank">
               <Button xl>View Resume</Button>
             </a>
@@ -39,3 +39,4 @@ const Hero = () => (
 );
 
 export { Hero };
+// {`${process.env.baseUrl}/assets/docs/prash-java-resume.pdf`}
