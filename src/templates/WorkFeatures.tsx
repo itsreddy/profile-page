@@ -5,7 +5,7 @@ import { Section } from '../layout/Section';
 const WorkFeatures = () => (
   <Section title="Work Experience">
     <a href="https://lvpmitra.com/#home" target="_blank" rel="noreferrer">
-      <div className="transition duration-500 rounded-3xl hover:bg-gray-100 mt-20 p-6 flex flex-wrap items-center flex-row-reverse">
+      <div className="transition duration-300 hover:shadow-2xl rounded-3xl hover:bg-gray-100 mt-20 p-6 flex flex-wrap items-center flex-row-reverse">
         <div className="w-full sm:w-1/2 sm:px-6">
           <h3 className="text-xl text-gray-900 font-semibold">
             Machine Learning Intern/Research Fellow, Center for Innovation, L. V. Prasad Eye
@@ -27,7 +27,11 @@ const WorkFeatures = () => (
             to build and deploy next generation of eye care technologies powered by AI. I worked on
             a device called
             {' '}
-            <a href="https://lvpmitra.com/pediatric-perimeter#introduction-1" target="_blank" rel="noreferrer">
+            <a
+              href="https://lvpmitra.com/pediatric-perimeter#introduction-1"
+              target="_blank"
+              rel="noreferrer"
+            >
               Pediatric Perimeter
             </a>
             , a one-of-a-kind device to quantify visual field extent and developmental delays in
@@ -49,7 +53,7 @@ const WorkFeatures = () => (
     </a>
 
     <a href="https://leoforce.com/" target="_blank" rel="noreferrer">
-      <div className="transition duration-500 rounded-3xl hover:bg-gray-100 mt-20 p-6 flex flex-wrap items-center flex-row-reverse">
+      <div className="transition duration-300 hover:shadow-2xl rounded-3xl hover:bg-gray-100 mt-20 p-6 flex flex-wrap items-center flex-row-reverse">
         <div className="w-full sm:w-1/2 sm:px-6">
           <h3 className="text-xl text-gray-900 font-semibold">
             Summer Intern, Leoforce Inc., India (June - July, 2017)
@@ -71,7 +75,7 @@ const WorkFeatures = () => (
     </a>
 
     <a href="https://www.osi-systems.com/" target="_blank" rel="noreferrer">
-      <div className="transition duration-500 rounded-3xl hover:bg-gray-100 mt-20 p-6 flex flex-wrap items-center flex-row-reverse">
+      <div className="transition duration-300 hover:shadow-2xl rounded-3xl hover:bg-gray-100 mt-20 p-6 flex flex-wrap items-center flex-row-reverse">
         <div className="w-full sm:w-1/2 sm:px-6">
           <h3 className="text-xl text-gray-900 font-semibold">
             Summer Intern, OSI Systems Inc., India (May - July, 2016)

@@ -14,9 +14,10 @@ type IVerticalFeatureRowProps = {
 
 const VerticalFeatureRowClickable = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'transition duration-500',
+    'transition duration-300',
     'rounded-3xl',
     'hover:bg-gray-100',
+    'hover:shadow-2xl',
     'mt-20',
     'p-6',
     'flex',
