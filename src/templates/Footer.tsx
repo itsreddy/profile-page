@@ -75,8 +75,14 @@ const Footer = () => (
             </Link> */}
           </>
         )}
-      >
-        {/* <li>
+      />
+    </Section>
+  </Background>
+);
+
+export { Footer };
+
+/* <li>
           <Link href="/">
             <a>Home</a>
           </Link>
@@ -95,10 +101,4 @@ const Footer = () => (
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
             <a>GitHub</a>
           </Link>
-        </li> */}
-      </CenteredFooter>
-    </Section>
-  </Background>
-);
-
-export { Footer };
+        </li> */
