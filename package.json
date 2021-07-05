@@ -5,7 +5,7 @@
     "dev": "next --port 8080",
     "build": "next build",
     "start": "next start",
-    "predeploy": "next build",
+    "predeploy": "next export",
     "deploy": "gh-pages -d build",
     "build-stats": "ANALYZE=true npm run build",
     "export": "next export -o dist",

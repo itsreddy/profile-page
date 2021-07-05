@@ -8,7 +8,7 @@
 /dist
 
 # production
-# /build
+/build
 /dist
 /.next
 /bundles
