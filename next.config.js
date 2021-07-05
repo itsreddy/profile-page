@@ -5,6 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const baseUrl = '';
 
 module.exports = withBundleAnalyzer({
+  distDir: 'build',
   poweredByHeader: false,
   trailingSlash: true,
   basePath: baseUrl,
