@@ -1,6 +1,7 @@
-import Image from "next/image";
+
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ProfileImageSection } from "@/components/profile-image-section";
 
 export default function Home() {
   return (
@@ -15,28 +16,22 @@ export default function Home() {
         <ThemeToggle />
       </div>
 
-      <main className="container mx-auto px-6 py-20 md:py-32 flex flex-col gap-24 relative z-10">
+      <main className="container mx-auto px-6 py-12 md:py-20 flex flex-col gap-12 relative z-10">
 
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div className="relative shrink-0 group">
-            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-gradient-to-tr from-purple-500 to-blue-500 p-[2px] transition-transform duration-500 group-hover:scale-105">
-              <div className="w-full h-full rounded-full bg-white dark:bg-[#111] flex items-center justify-center overflow-hidden relative">
-                {/* Placeholder for actual photo if available, using initials for now */}
-                <span className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white transition-colors">PD</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center md:text-left space-y-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+          
+          {/* Text Section */}
+          <div className="flex-1 text-center md:text-left space-y-4 order-2 md:order-1">
             <div className="space-y-2">
               <h2 className="text-sm font-medium tracking-wider text-purple-400 uppercase">Senior Data Scientist</h2>
               <h1 className="text-4xl md:text-6xl font-bold tracking-normal pb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 dark:from-white dark:via-white dark:to-white/60">Prashanth Duggirala</h1>
             </div>
 
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed mx-auto md:mx-0">
               Senior Data Scientist with 5+ years of experience delivering scalable machine learning solutions.
-              Proven track record of leading the development of cutting-edge AI systems, including large language models (LLMs) and computer vision applications.
+              Proven track record of leading the development of cutting-edge AI systems, including large language models (LLMs) and computer vision applications.<br></br>
+              Currently working on Agentic AI enabled chat interfaces for recruiting operations automation.
             </p>
 
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -73,14 +68,48 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          {/* Image Section */}
+          {/* Image Section */}
+          <ProfileImageSection />
         </div>
 
+        {/* Skills Section */}
+        <section className="space-y-5">
+          <h3 className="text-2xl font-bold border-l-4 border-blue-500 pl-4">Technical Skills</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-5">
+              <h4 className="text-lg font-semibold mb-4 text-blue-600 dark:text-blue-300">Machine Learning & AI</h4>
+              <div className="flex flex-wrap gap-2">
+                {["LangChain", "Agents SDK", "DSPy", "LLM", "VLM", "ViT", "MLFlow", "PyTorch", "HuggingFace", "Pandas", "Numpy", "Copilot", "OpenAI", "Bedrock"].map((skill) => (
+                  <span key={skill} className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-200 text-sm border border-blue-200 dark:border-blue-500/20">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold mb-4 text-green-600 dark:text-green-300">Web & DevOps</h4>
+              <div className="flex flex-wrap gap-2">
+                {["React", "JavaScript", "CSS", "OAuth", "Streamlit", "Appsmith", "Git", "Docker", "Kubernetes", "AWS", "GitLab CICD", "EC2", "OpenSearch", "EKS"].map((skill) => (
+                  <span key={skill} className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-200 text-sm border border-green-200 dark:border-green-500/20">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* Experience Section */}
-        <section className="space-y-8">
+        <section className="space-y-5">
           <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4">Experience</h3>
-          <div className="grid gap-8">
+          <div className="grid gap-4">
             {/* Leoforce */}
-            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-8 hover:bg-black/10 dark:hover:bg-white/[0.07] transition-colors">
+            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-6 hover:bg-black/10 dark:hover:bg-white/[0.07] transition-colors">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Leoforce Inc.</h4>
@@ -114,41 +143,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section className="space-y-8">
-          <h3 className="text-2xl font-bold border-l-4 border-blue-500 pl-4">Technical Skills</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-6">
-              <h4 className="text-lg font-semibold mb-4 text-blue-600 dark:text-blue-300">Machine Learning & AI</h4>
-              <div className="flex flex-wrap gap-2">
-                {["LangChain", "Agents SDK", "DSPy", "LLM", "VLM", "ViT", "MLFlow", "PyTorch", "HuggingFace", "Pandas", "Numpy", "Copilot", "OpenAI", "Bedrock"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-200 text-sm border border-blue-200 dark:border-blue-500/20">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-6">
-              <h4 className="text-lg font-semibold mb-4 text-green-600 dark:text-green-300">Web & DevOps</h4>
-              <div className="flex flex-wrap gap-2">
-                {["React", "JavaScript", "CSS", "OAuth", "Streamlit", "Appsmith", "Git", "Docker", "Kubernetes", "AWS", "GitLab CICD", "EC2", "OpenSearch", "EKS"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-200 text-sm border border-green-200 dark:border-green-500/20">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </section>
-
         {/* Projects & Education Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Projects */}
-          <section className="space-y-8">
+          <section className="space-y-5">
             <h3 className="text-2xl font-bold border-l-4 border-pink-500 pl-4">Key Projects</h3>
             <div className="space-y-6">
               <div className="group">
@@ -167,7 +166,7 @@ export default function Home() {
           </section>
 
           {/* Education */}
-          <section className="space-y-8">
+          <section className="space-y-5">
             <h3 className="text-2xl font-bold border-l-4 border-yellow-500 pl-4">Education</h3>
             <div className="space-y-6">
               <div>
