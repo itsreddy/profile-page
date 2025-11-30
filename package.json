@@ -1,65 +1,29 @@
 {
-  "name": "next-js-boilerplate",
-  "version": "1.0.0",
+  "name": "profile-page-2",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next --port 8080",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d .next",
-    "build-stats": "ANALYZE=true npm run build",
-    "export": "next export -o dist",
-    "build-prod": "run-s clean build export",
-    "clean": "rimraf .next dist",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
+    "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "next": "^10.2.0",
-    "next-seo": "^4.24.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-jsx-plugin-postcss": "^4.0.1"
+    "lucide-react": "^0.555.0",
+    "next": "^16.0.6",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^10.2.0",
-    "@tailwindcss/jit": "^0.1.18",
-    "@types/classnames": "^2.3.1",
-    "@types/node": "^15.0.2",
-    "@types/react": "^17.0.5",
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "autoprefixer": "^10.2.5",
-    "eslint": "^7.26.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "gh-pages": "^3.2.3",
-    "husky": "^4.3.8",
-    "lint-staged": "^11.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.14",
-    "prettier": "^2.3.0",
-    "rimraf": "^3.0.2",
-    "tailwindcss": "^2.1.2",
-    "typescript": "^4.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "eslint"
-    ],
-    "*.json": [
-      "prettier --write"
-    ]
-  },
-  "license": "ISC",
-  "homepage": "https://itsreddy.github.io/profile-page"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.0.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
 }
