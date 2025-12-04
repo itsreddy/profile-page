@@ -2,6 +2,15 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "resume-parsing",
+    title: "Resume Parsing using NER models",
+    description: "Engineered an end-to-end data pipeline processing 500K + documents daily using modern NLP techniques to: design custom parsing software for unstructured job/resume data (web pages, PDFs) with 90% accuracy; train and deploy domain-adapted BERT architectures for NER achieving 92% F1-score to extract and index insights in Elasticsearch; and apply innovative LLM-based data augmentation improving system generalizability by 60%.",
+    image: "/projects/resume-parser.jpg",
+    tags: ["NLP", "OCR", "Transformers", "PyTorch", "Elasticsearch", "Data Augmentation", "LLM", "Data Science", "Machine Learning", "Python"],
+    links: {
+    },
+  },
+  {
     id: "text-segmentation",
     title: "Text-Prompted Image Segmentation for Quality Assurance",
     description: "Developed a lightweight, text-conditioned segmentation model (CLIPSeg) for drywall quality assurance. Achieved 0.55 mIoU and 0.94 Pixel Accuracy for zero-shot defect detection, enabling automated quality control without extensive labeled training data.",

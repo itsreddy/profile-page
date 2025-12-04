@@ -18,7 +18,7 @@ export function PhotoGallery({ isOpen, onClose }: PhotoGalleryProps) {
   // Reset index when opening
   useEffect(() => {
     if (isOpen) {
-      setCurrentIndex(0);
+      setCurrentIndex(0); 
       document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
     } else {
       document.body.style.overflow = "unset";
