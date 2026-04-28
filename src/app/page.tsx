@@ -24,14 +24,12 @@ export default function Home() {
           {/* Text Section */}
           <div className="flex-1 text-center md:text-left space-y-4 order-2 md:order-1">
             <div className="space-y-2">
-              <h2 className="text-sm font-medium tracking-wider text-purple-400 uppercase">Senior Data Scientist</h2>
+              <h2 className="text-sm font-medium tracking-wider text-purple-400 uppercase">Senior ML Engineer</h2>
               <h1 className="text-4xl md:text-6xl font-bold tracking-normal pb-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 dark:from-white dark:via-white dark:to-white/60">Prashanth Duggirala</h1>
             </div>
 
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed mx-auto md:mx-0">
-              Senior Data Scientist with 5+ years of experience delivering scalable machine learning solutions.
-              Proven track record of leading the development of cutting-edge AI systems, including large language models (LLMs) and computer vision applications.<br></br>
-              Currently working on Agentic AI enabled chat interfaces for recruiting operations automation.
+              AI Engineer with 5+ years of experience building production AI systems across media intelligence and recruiting automation domains. Specialized in designing multi-agent architectures with LLM-powered orchestration, tool development, and evaluation frameworks. Deep expertise also spans core ML; data curation, model training, and deploying scalable inference pipelines in cross-functional environments.
             </p>
 
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -66,6 +64,14 @@ export default function Home() {
                 </svg>
                 View Projects
               </Link>
+
+              {/* Download Resume Button */}
+              <a href="/prashanth-resume.pdf" download className="px-6 py-3 rounded-full bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-colors backdrop-blur-md active:scale-95 flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Resume
+              </a>
             </div>
           </div>
 
@@ -82,7 +88,7 @@ export default function Home() {
             <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-5">
               <h4 className="text-lg font-semibold mb-4 text-blue-600 dark:text-blue-300">Machine Learning & AI</h4>
               <div className="flex flex-wrap gap-2">
-                {["LangChain", "Agents SDK", "DSPy", "LLM", "VLM", "ViT", "MLFlow", "PyTorch", "HuggingFace", "Pandas", "Numpy", "Copilot", "OpenAI", "Bedrock"].map((skill) => (
+                {["LangChain", "Langgraph", "Deepagents", "DSPy", "LLM", "VLM", "ViT", "MLFlow", "PyTorch", "HuggingFace", "Pandas", "Numpy", "Copilot", "OpenAI", "Bedrock"].map((skill) => (
                   <span key={skill} className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-200 text-sm border border-blue-200 dark:border-blue-500/20">
                     {skill}
                   </span>
@@ -108,30 +114,58 @@ export default function Home() {
         <section className="space-y-5">
           <h3 className="text-2xl font-bold border-l-4 border-purple-500 pl-4">Experience</h3>
           <div className="grid gap-4">
+            {/* Meltwater */}
+            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-6 hover:bg-black/10 dark:hover:bg-white/[0.07] transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <a href="https://www.meltwater.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group/company">
+                    <img src="https://www.google.com/s2/favicons?domain=meltwater.com&sz=64" alt="Meltwater" className="w-9 h-9 rounded-lg object-contain bg-white p-0.5" />
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white group-hover/company:underline">Meltwater</h4>
+                      <p className="text-purple-600 dark:text-purple-400">AI Engineer III</p>
+                    </div>
+                  </a>
+                </div>
+                <span className="text-sm text-gray-500 font-mono mt-2 md:mt-0">Dec 2025 - Present</span>
+              </div>
+              <ul className="list-disc list-outside ml-5 space-y-2 text-gray-600 dark:text-gray-400">
+                <li><strong>Architected and implemented a multi-agent routing system</strong> for Meltwater&apos;s AI-powered media intelligence chatbot, designing an LLM-driven agent router on LangGraph that dynamically dispatches queries across specialized sub-agents (content tracking, brand analytics, news summarization) — enabling multi-turn conversational workflows with phase-gated execution, async tool calling, and stateful conversation management, achieving 97% routing accuracy.</li>
+                <li><strong>Developed domain-specific AI agent tools</strong> (media monitoring, journalist discovery, press release impact analysis, coverage reporting) exposed via Model Context Protocol (MCP) on a LangChain ReAct architecture — reducing average query resolution time by 50% across Meltwater&apos;s media intelligence platform.</li>
+                <li><strong>Extended a custom LLM evaluation framework</strong> (DeepEval, DSPy, LangSmith) with unit and end-to-end evals covering citation accuracy, routing correctness, and adversarial test cases — achieving &gt;90% eval coverage. Delivered platform-wide backend improvements to the FastAPI chatapi including intent classification and robust error handling with Prometheus and Grafana monitoring, cutting targeted error-type rates by 80%.</li>
+              </ul>
+            </div>
+
             {/* Leoforce */}
             <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-6 hover:bg-black/10 dark:hover:bg-white/[0.07] transition-colors">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Leoforce Inc.</h4>
-                  <p className="text-purple-600 dark:text-purple-400">Senior Data Scientist</p>
+                <div className="flex items-center gap-3">
+                  <a href="https://www.leoforce.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group/company">
+                    <img src="https://www.google.com/s2/favicons?domain=leoforce.com&sz=64" alt="Leoforce" className="w-9 h-9 rounded-lg object-contain bg-white p-0.5" />
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white group-hover/company:underline">Leoforce Inc.</h4>
+                      <p className="text-purple-600 dark:text-purple-400">Senior Data Scientist</p>
+                    </div>
+                  </a>
                 </div>
-                <span className="text-sm text-gray-500 font-mono mt-2 md:mt-0">Jun 2021 - Present</span>
+                <span className="text-sm text-gray-500 font-mono mt-2 md:mt-0">Jun 2021 - Dec 2025</span>
               </div>
               <ul className="list-disc list-outside ml-5 space-y-2 text-gray-600 dark:text-gray-400">
-                <li>Led initiatives within a global, cross-functional team of 9 engineers to deliver 3 scalable AI-based solutions over 12 months. Defined ML best practices and mentored 5 junior engineers.</li>
-                <li>Architected and developed advanced AI agents for a chat-based application (IRA) using LLMs, RAG, and intelligent agent workflows, achieving 75% automation rate and reducing manual screening time by 50%.</li>
-                <li>Engineered an end-to-end data pipeline processing 500K+ documents daily using modern NLP techniques. Designed custom parsing software with 90% accuracy and trained domain-adapted BERT architectures for NER achieving 92% F1-score.</li>
-                <li>Built scalable ML inference pipelines using Docker and Kubernetes (EKS) for efficient model deployment and management.</li>
-                <li>Established a comprehensive MLOps framework using MLflow for experiment tracking, OpenTelemetry for observability, and Grafana/Streamlit for real-time monitoring.</li>
+                <li><strong>Architected IRA, a chat-based AI recruiting agent</strong> powered by LLMs, hybrid search (dense + sparse retrieval), and intelligent agent workflows with RAG-based dynamic few-shot selection — automating job matching, resume screening, and real-time candidate engagement at scale, achieving a 75% automation rate and reducing manual screening time by 50%.</li>
+                <li><strong>Engineered an end-to-end NLP pipeline</strong> combining custom parsers, domain-adapted BERT for NER, and LLM-based data augmentation to extract structured insights from 500K+ daily unstructured documents — achieving 90% parsing accuracy and 92% F1-score. Built scalable inference pipelines on Docker/Kubernetes (EKS) with MLflow tracking and real-time Grafana dashboards for proactive model monitoring.</li>
               </ul>
             </div>
 
             {/* UC Davis */}
             <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-8 hover:bg-black/10 dark:hover:bg-white/[0.07] transition-colors">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">University of California, Davis</h4>
-                  <p className="text-purple-600 dark:text-purple-400">Graduate ML Researcher</p>
+                <div className="flex items-center gap-3">
+                  <a href="https://www.ucdavis.edu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group/company">
+                    <img src="https://www.google.com/s2/favicons?domain=ucdavis.edu&sz=64" alt="UC Davis" className="w-9 h-9 rounded-lg object-contain bg-white p-0.5" />
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white group-hover/company:underline">University of California, Davis</h4>
+                      <p className="text-purple-600 dark:text-purple-400">Graduate ML Researcher</p>
+                    </div>
+                  </a>
                 </div>
                 <span className="text-sm text-gray-500 font-mono mt-2 md:mt-0">Oct 2019 - Mar 2021</span>
               </div>
